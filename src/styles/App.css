@@ -48,6 +48,7 @@ header{
     padding: 15px 10%;
     align-items: center;
     transition: 1000ms ease;
+    z-index: 100;
     & img{
         width: 50px;
     }
@@ -150,29 +151,31 @@ main{
             /* overflow: hidden; */
             position: relative;
             /* background-color: rgba(255, 0, 0, 0.156); */
+            & .image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             & img{
-                width: 100%;
+                width: 70%;
                 aspect-ratio: 1;
                 object-fit: cover;
                 border-radius: 50%;
                 border: solid .5em var(--platinum);
             }
             & .intro{
-                display: flex;
-                gap: 3rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
                 height: 100%;
                 justify-content: space-between;
                 align-items: center;
                 justify-content: center;
-                & .image{
-                    width: 50%;
-                }
                 & .texts{
                     display: flex;
                     flex-direction: column;
                     gap: 2rem;
                     & h1{
-                        font-size: 5rem;
+                        font-size: 4rem;
                         font-family: 'Syne', sans-serif;
                         color: var(--charcoal);
                     }
@@ -263,5 +266,68 @@ main{
     }
 }
 
+
+@media screen AND (max-width: 1260px) {
+    main{
+        & #hero{
+            & .contents{
+                & img{
+                    width: 90%;
+                }
+                & .intro{
+                    & .texts{
+                        & h1{
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen AND (max-width: 1024px){
+    main{
+        & #hero{
+            & .contents{
+                & .intro{
+                    grid-template-columns: repeat(1, 1fr);
+                    & .image{
+                        display: none;
+                    }
+                    & .texts{
+                        & p{
+                            text-align: justify;
+                        }
+                        & .desc{
+                            & h3{
+                                font-size: 18px;
+                            }
+                            & p{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen AND (max-width: 500px){
+    main{
+        & #hero{
+            & .contents{
+                & .intro{
+                    & .texts{
+                        & h1{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* ===================      Home designing      =================== */

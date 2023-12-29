@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Typewriter from 'typewriter-effect';
 
 function Home() {
   return (
@@ -7,22 +8,22 @@ function Home() {
         <div className="contents">
           <div className="intro">
             <div className="texts">
-              <h1>Wilson Nshizirungu</h1>
+              <h1 data-aos="fade-up" data-aos-duration="1000">Wilson Nshizirungu</h1>
               <div className="desc">
-                <h3>Fullstack Website developer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsum neque illum, fuga sint harum culpa id earum expedita eveniet est, a deleniti quibusdam asperiores reiciendis minima itaque fugiat quod.</p>
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><Typewriter options={{ autoStart: true,loop: true,delay: 100,strings: [" Fullstack website developer", "Graphic Designer", "Student", "Collaborator & Contributor", "Freelancer"]}} /></h3>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">I am a software developer situated in Rwanda. Over the span of my short professional career, I have acquired considerable expertise and made substantial strides in enhancing my skill set.</p>
               </div>
-              <a href="#about" className="btn-get-started">Say hello</a>
+              <a href="#contact" className="btn-get-started">Say hello</a>
             </div>
             <div className="image">
               <img src={require("../images/hero.jpg")} alt="Developer's profile" />
             </div>
           </div>
           <div className="social">
-            <a href="lorem"><i class="fa-brands fa-twitter"></i></a>
-            <a href="lorem"><i class="fa-brands fa-instagram"></i></a>
-            <a href="lorem"><i class="fa-brands fa-github"></i></a>
-            <a href="lorem"><i class="fa-brands fa-linkedin"></i></a>
+            <a target='_blank' rel='noreferrer' href="https://twitter.com/nshiziboi"><i class="fa-brands fa-twitter"></i></a>
+            <a target='_blank' rel='noreferrer' href="https://www.instagram.com/nshizi_boi/"><i class="fa-brands fa-instagram"></i></a>
+            <a target='_blank' rel='noreferrer' href="https://github.com/nshizi1"><i class="fa-brands fa-github"></i></a>
+            <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/nshizirungu-wilson-7365a9268/"><i class="fa-brands fa-linkedin"></i></a>
           </div>
           <div className="scroll">
             <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
