@@ -19,8 +19,13 @@ function Home() {
             </div>
           </div>
           <div className="social">
+            <a href="lorem"><i class="fa-brands fa-twitter"></i></a>
+            <a href="lorem"><i class="fa-brands fa-instagram"></i></a>
+            <a href="lorem"><i class="fa-brands fa-github"></i></a>
+            <a href="lorem"><i class="fa-brands fa-linkedin"></i></a>
           </div>
           <div className="scroll">
+            <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
           </div>
         </div>
       </section>

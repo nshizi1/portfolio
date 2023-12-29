@@ -147,7 +147,9 @@ main{
         padding: 80px 10%;
         & .contents{
             height: 100%;
-            overflow: hidden;
+            /* overflow: hidden; */
+            position: relative;
+            /* background-color: rgba(255, 0, 0, 0.156); */
             & img{
                 width: 100%;
                 aspect-ratio: 1;
@@ -206,7 +208,58 @@ main{
                     }
                 }
             }
+            & .social{
+                width: fit-content;
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                gap: 1rem;
+                & a{
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    transition: 300ms ease;
+                    color: var(--charcoal);
+                }
+                & a:hover{
+                    color: var(--black);
+                }
+            }
+            & .scroll{
+                width: fit-content;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                gap: 1rem;
+                & a{
+                    border: solid 2px var(--salt);
+                    border-radius: 25px;
+                    padding: 12px 8px;
+                    transition: 300ms ease;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    transition: 300ms ease;
+                    color: var(--platinum);
+                    & i{
+                        animation: move 2s linear infinite;
+                    }
+                }
+                & a:hover{
+                    background-color: var(--salt);
+                    color: var(--charcoal);
+                }
+            }
         }
+    }
+}
+@keyframes move {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
     }
 }
 
