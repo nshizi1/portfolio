@@ -196,6 +196,7 @@ main{
                     }
                     & a{
                         background-color: var(--charcoal);
+                        width: -moz-fit-content;
                         width: fit-content;
                         padding: .6rem 1rem;
                         border-radius: 5px;
@@ -212,6 +213,7 @@ main{
                 }
             }
             & .social{
+                width: -moz-fit-content;
                 width: fit-content;
                 position: absolute;
                 bottom: 0;
@@ -228,6 +230,7 @@ main{
                 }
             }
             & .scroll{
+                width: -moz-fit-content;
                 width: fit-content;
                 position: absolute;
                 bottom: 0;
