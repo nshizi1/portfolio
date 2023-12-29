@@ -7,6 +7,7 @@
     -webkit-user-select: none;
     user-select: none;
     font-family: 'Lato', sans-serif;
+    /* border: dashed 1px red; */
 }
 :root{
 
@@ -15,5 +16,110 @@
     --silver: #c8c9ca;
     --charcoal: #444851;
     --gray: #5c6170;
+    --black: #272829;
 
 }
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--platinum);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--charcoal);
+    border-radius: 10px;
+}
+
+/* ===================      HEader designing      =================== */
+
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    background-color: var(--platinum);
+    padding: 15px 10%;
+    align-items: center;
+    transition: 1000ms ease;
+    & img{
+        width: 50px;
+    }
+    & nav{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        & a{
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+            text-decoration: none;
+            font-size: 15px;
+            color: var(--gray);
+            transition: 300ms ease;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        & a:hover{
+            color: var(--black);
+        }
+        & a:focus{
+            color: var(--black);
+        }
+        
+    }
+    & .fa-xmark, & .fa-bars{
+        font-size: 35px;
+        color: var(--gray);
+        visibility: hidden;
+        opacity: none;
+        display: none;
+    }
+    & .fa-bars{
+        display: none;
+    }
+}
+
+header.sticky{
+    box-shadow: 0 0 20px 5px var(--black);
+}
+
+@media screen AND (max-width: 830px){
+    header .logo img{
+        width: 40px;
+    }
+    header .fa-solid{
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    header .fa-xmark{
+        position: absolute;
+        top: 20px;
+        right: 10%;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--black);
+        transition: 1s ease;
+        transform: translateX(100vh);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .responsive_nav{
+        transform: none;
+    }
+}
+
+
+/* ===================      HEader designing      =================== */

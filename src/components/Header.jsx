@@ -1,22 +1,28 @@
-import React from 'react'
+import React, {useRef} from 'react'
 
 function Header() {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+    
+  }
   return (
     <header>
       <div className="logo">
         <img src={require("../images/logo.png")} alt="Developer's Logo" />
       </div>
-      <nav>
-        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="#home"><i class="fa-solid fa-house"></i> About</a>
-        <a href="#home"><i class="fa-solid fa-house"></i> Skills</a>
-        <a href="#home"><i class="fa-solid fa-house"></i> Resume</a>
-        <a href="#home"><i class="fa-solid fa-house"></i> Services</a>
-        <a href="#home"><i class="fa-solid fa-house"></i> Portfolio</a>
-        <a href="#home"><i class="fa-solid fa-house"></i> Contact</a>
-        <i class="fa-solid fa-xmark"></i>
+      <nav ref={navRef}>
+        <a onClick={showNavbar} href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a onClick={showNavbar} href="#about"><i class="fa-solid fa-user"></i> About</a>
+        <a onClick={showNavbar} href="#skills"><i class="fa-solid fa-laptop"></i> Skills</a>
+        <a onClick={showNavbar} href="#resume"><i class="fa-solid fa-file"></i> Resume</a>
+        <a onClick={showNavbar} href="#services"><i class="fa-solid fa-server"></i> Services</a>
+        <a onClick={showNavbar} href="#portfolio"><i class="fa-solid fa-book"></i> Portfolio</a>
+        <a onClick={showNavbar} href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <i onClick={showNavbar} class="fa-solid fa-xmark"></i>
       </nav>
-      <i class="fa-solid fa-bars"></i>
+      <i onClick={showNavbar} class="fa-solid fa-bars"></i>
     </header>
   )
 }
