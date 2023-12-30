@@ -73,6 +73,9 @@ header{
         & a:focus{
             color: var(--black);
         }
+        & .social{
+            display: none;
+        }
         
     }
     & .fa-xmark, & .fa-bars{
@@ -114,7 +117,7 @@ header.sticky{
         width: 100%;
         background-color: var(--black);
         transition: 1s ease;
-        transform: translateX(100vh);
+        transform: translateY(-100vh);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -317,6 +320,26 @@ main{
     }
 }
 
+@media screen AND (max-width: 768px){
+    main{
+        & #hero{
+            & .contents{
+                & .scroll{
+                    display: none;
+                }
+                & .intro{
+                    & .texts{
+                        gap: .8rem;
+                        & .desc{
+                            gap: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen AND (max-width: 500px){
     main{
         & #hero{
@@ -327,6 +350,26 @@ main{
                             font-size: 1.7rem;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen AND (max-height: 580px){
+    header{
+        & nav{
+            & .social{
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+    main{
+        & #hero{
+            & .contents{
+                & .social{
+                    display: none;
                 }
             }
         }
