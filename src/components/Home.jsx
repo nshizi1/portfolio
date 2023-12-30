@@ -30,6 +30,45 @@ function Home() {
           </div>
         </div>
       </section>
+      <section id="about">
+        <div className="page">
+          <h3>01</h3>
+          <div className="line"></div>
+        </div>
+        <div className="contents">
+          <div className="image">
+            <img src={require("../images/hero.jpg")} alt="" />
+          </div>
+          <div className="texts">
+            <div className="title">
+              <p>Discover</p>
+              <h2>About Me</h2>
+              <div className="line"></div>
+            </div>
+            <div className="info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius, velit quisquam minima et vel suscipit error reprehenderit mollitia laboriosam facilis iste ea illum veniam neque libero amet molestias recusandae.</p>
+              <div className="cards">
+                <div className="card">
+                  <i class="fa-solid fa-gear"></i>
+                  <h2>Experience</h2>
+                  <p>3+ years</p>
+                </div>
+                <div className="card">
+                  <i class="fa-solid fa-rectangle-list"></i>
+                  <h2>Completed</h2>
+                  <p>10+ years</p>
+                </div>
+                <div className="card">
+                  <i class="fa-solid fa-headset"></i>
+                  <h2>Support</h2>
+                  <p>Online 24/7</p>
+                </div>
+              </div>
+              <a href="cv.pdf" download={true}><button>Download CV</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
