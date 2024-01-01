@@ -69,6 +69,45 @@ function Home() {
           </div>
         </div>
       </section>
+      <section id="skills">
+        <div className="page">
+          <h3>02</h3>
+          <div className="line"></div>
+        </div>
+        <div className="contents">
+          <div className="title">
+            <p>Knowledge</p>
+            <h2>My Education</h2>
+            <div className="line"></div>
+          </div>
+          <div className="cards">
+            <div className="card">
+              <div className="shape"></div>
+              <p className="time">20211-2017</p>
+              <p className="school">Primary school</p>
+              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, a iure molestiae ea beatae voluptatem aspernatur enim adipisci, excepturi ipsum autem exercitationem quos rerum?</p>
+            </div>
+            <div className="card">
+              <div className="shape"></div>
+              <p className="time">20211-2017</p>
+              <p className="school">Primary school</p>
+              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, a iure molestiae ea beatae voluptatem aspernatur enim adipisci, excepturi ipsum autem exercitationem quos rerum?</p>
+            </div>
+            <div className="card">
+              <div className="shape"></div>
+              <p className="time">20211-2017</p>
+              <p className="school">Primary school</p>
+              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, a iure molestiae ea beatae voluptatem aspernatur enim adipisci, excepturi ipsum autem exercitationem quos rerum?</p>
+            </div>
+            <div className="card">
+              <div className="shape"></div>
+              <p className="time">20211-2017</p>
+              <p className="school">Primary school</p>
+              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, a iure molestiae ea beatae voluptatem aspernatur enim adipisci, excepturi ipsum autem exercitationem quos rerum?</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

@@ -13,7 +13,7 @@ function Header() {
         <img src={require("../images/logo.png")} alt="Developer's Logo" />
       </div>
       <nav ref={navRef}>
-        <a onClick={showNavbar} href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a onClick={showNavbar} href="#hero"><i class="fa-solid fa-house"></i> Home</a>
         <a onClick={showNavbar} href="#about"><i class="fa-solid fa-user"></i> About</a>
         <a onClick={showNavbar} href="#skills"><i class="fa-solid fa-laptop"></i> Skills</a>
         <a onClick={showNavbar} href="#resume"><i class="fa-solid fa-file"></i> Resume</a>

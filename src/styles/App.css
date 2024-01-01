@@ -426,7 +426,7 @@ main{
 }
 #about{
     background-color: var(--salt);
-    position: absolute;
+    position: relative;
     & img{
         width: 100%;
         height: 100%;
@@ -434,7 +434,7 @@ main{
         border-radius: 10px;
     }
     & .contents{
-        margin: 80px 10%;
+        padding: 80px 10%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
@@ -560,3 +560,65 @@ main{
 }
 
 /* ===================      About designing      =================== */
+#skills{
+    background-color: var(--salt);
+    position: relative;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    & .contents{
+        padding: 80px 10%;
+        & .cards{
+            display: grid;
+            & .card{
+                background-color: var(--silver);
+                padding: 20px;
+                width: 50%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: .2rem;
+                & .shape{
+                    position: absolute;
+                    width: 15px;
+                    height: 12px;
+                    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+                    background-color: var(--gray);
+                }
+                & .time{
+                    font-family: 'Poppins', sans-serif;
+                    color: var(--charcoal);
+                }
+                & .school{
+                    font-size: 22px;
+                    font-family: 'Poppins', sans-serif;
+                    color: var(--charcoal);
+                    font-weight: 400;
+                }
+                & .desc{
+                    font-family: 'Poppins', sans-serif;
+                    color: var(--charcoal);
+                }
+            }
+            & .card:nth-child(even){
+                border-right: solid 4px var(--charcoal);
+                margin-left: 2px;
+                & .shape{
+                    right: 0;
+                    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+                }
+            }
+            & .card:nth-child(odd){
+                margin-left: auto;
+                margin-right: 2px;
+                border-left: solid 4px var(--charcoal);
+                & .shape{
+                    left: 0;
+                }
+            }
+        }
+    }
+}
