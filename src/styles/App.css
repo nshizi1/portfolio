@@ -8,6 +8,7 @@
     -webkit-user-select: none;
     user-select: none;
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
     /* border: dashed 1px red; */
 }
 :root{
@@ -357,14 +358,14 @@ main{
 }
 
 @media screen AND (max-height: 580px){
-    header{
+    /* header{
         & nav{
             & .social{
                 display: flex;
                 gap: 1rem;
             }
         }
-    }
+    } */
     main{
         & #hero{
             & .contents{
@@ -385,7 +386,7 @@ main{
 
 .page{
     position: absolute;
-    top: 10%;
+    top: 30px;
     right: 0;
     display: flex;
     align-items: center;
@@ -447,7 +448,7 @@ main{
                 }
                 & .cards{
                     display: grid;
-                    grid-template-columns: repeat(5, 1fr);
+                    grid-template-columns: repeat(4, 1fr);
                     gap: 1rem;
                     margin-top: 20px;
                     & .card{
@@ -517,6 +518,43 @@ main{
     }
 
 }
+@media screen AND (max-width: 768px) {
+    #about{
+        & .contents{
+            display: flex;
+            flex-direction: column;
+            & .texts{
+                & .info{
+                    & .cards{
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media screen AND (max-width: 425px){
+    #about{
+        & .contents{
+            & .texts{
+                & .info{
+                    & .cards{
+                        grid-template-columns: 1fr;
+                    }
+                }
+            }
+        }
+    }
+    .page{
+        & h3{
+            font-size: 20px;
+        }
+        & .line{
+            width: 25px;
+            height: 3px;
+        }
+    }
+}
 
 /* ===================      About designing      =================== */
