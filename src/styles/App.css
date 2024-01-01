@@ -518,7 +518,7 @@ main{
     }
 
 }
-@media screen AND (max-width: 768px) {
+@media screen AND (min-width: 767px) AND (max-width: 1024px) {
     #about{
         & .contents{
             display: flex;
@@ -534,9 +534,11 @@ main{
     }
 }
 
-@media screen AND (max-width: 425px){
+@media screen AND (max-width: 767px){
     #about{
         & .contents{
+            display: flex;
+            flex-direction: column;
             & .texts{
                 & .info{
                     & .cards{
