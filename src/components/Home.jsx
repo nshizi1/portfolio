@@ -1,7 +1,10 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import data from '../data/progress.json';
 
 function Home() {
+
+  const progresses = data.progress;
   return (
     <main>
       <section id="hero">
@@ -105,6 +108,24 @@ function Home() {
               <p className="school">Primary school</p>
               <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, a iure molestiae ea beatae voluptatem aspernatur enim adipisci, excepturi ipsum autem exercitationem quos rerum?</p>
             </div>
+          </div>
+          <div className="title">
+            <p>Export</p>
+            <h2>My Skills</h2>
+            <div className="line"></div>
+          </div>
+          <div className="progresses">
+            {progresses.map(progress => (
+            <div className="progress" key={progress.id}>
+              <div className="text">
+                <p>{progress.name}</p>
+                <p>{progress.width}%</p>
+              </div>
+              <div className="max">
+                <div className="min" style={{width: `${progress.width}%`}}></div>
+              </div>
+            </div>
+            ))}
           </div>
         </div>
       </section>

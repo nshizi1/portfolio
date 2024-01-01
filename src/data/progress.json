@@ -1,0 +1,79 @@
+{
+    "progress": [
+        {
+            "id": "1",
+            "name": "MS Word",
+            "width": 95
+        },
+        {
+            "id": "2",
+            "name": "MS Excel",
+            "width": 90
+        },
+        {
+            "id": "3",
+            "name": "Photoshop",
+            "width": 85
+        },
+        {
+            "id": "4",
+            "name": "Illustrator",
+            "width": 80
+        },
+        {
+            "id": "5",
+            "name": "Tailwind",
+            "width": 70
+        },
+        {
+            "id": "6",
+            "name": "Figma",
+            "width": 90
+        },
+        {
+            "id": "7",
+            "name": "HTML",
+            "width": 100
+        },
+        {
+            "id": "8",
+            "name": "CSS",
+            "width": 90
+        },
+        {
+            "id": "9",
+            "name": "JavaScript",
+            "width": 70
+        },
+        {
+            "id": "10",
+            "name": "React JS",
+            "width": 75
+        },
+        {
+            "id": "11",
+            "name": "Node JS",
+            "width": 40
+        },
+        {
+            "id": "12",
+            "name": "PHP",
+            "width": 100
+        },
+        {
+            "id": "13",
+            "name": "Python",
+            "width": 30
+        },
+        {
+            "id": "14",
+            "name": "Java",
+            "width": 30
+        },
+        {
+            "id": "15",
+            "name": "MySQL",
+            "width": 95
+        }
+    ]
+}

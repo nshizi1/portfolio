@@ -93,7 +93,7 @@ header{
 
 header.sticky{
     background-color: var(--platinum);
-    box-shadow: 0 0 20px 5px var(--black);
+    box-shadow: 0 0 20px 5px var(--gray);
 }
 
 @media screen AND (max-width: 830px){
@@ -386,7 +386,7 @@ main{
 
 .page{
     position: absolute;
-    top: 30px;
+    top: 80px;
     right: 0;
     display: flex;
     align-items: center;
@@ -541,6 +541,9 @@ main{
             flex-direction: column;
             & .texts{
                 & .info{
+                    & p{
+                        font-size: 15px;
+                    }
                     & .cards{
                         grid-template-columns: 1fr;
                     }
@@ -560,6 +563,10 @@ main{
 }
 
 /* ===================      About designing      =================== */
+
+
+/* ===================      Skills designing      =================== */
+
 #skills{
     background-color: var(--salt);
     position: relative;
@@ -573,6 +580,7 @@ main{
         padding: 80px 10%;
         & .cards{
             display: grid;
+            margin-bottom: 100px;
             & .card{
                 background-color: var(--silver);
                 padding: 20px;
@@ -620,5 +628,56 @@ main{
                 }
             }
         }
+        & .progresses{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            & .progress{
+                display: flex;
+                flex-direction: column;
+                & .text{
+                    display: flex;
+                    justify-content: space-between;
+                    & p{
+                        color: var(--gray);
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+                & .max{
+                    background-color: var(--silver);
+                    width: 100%;
+                    height: 8px;
+                    border-radius: 10px;
+                    & .min{
+                        background-color: var(--charcoal);
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
     }
 }
+@media screen AND (max-width: 767px){
+    #skills{
+        & .contents{
+            & .cards{
+                gap: .2rem;
+                & .card{
+                    width: 100%;
+                }
+                & .card:nth-child(odd){
+                    margin-left: 0px;
+                }
+                & .card:nth-child(even){
+                    margin-left: 0px;
+                }
+            }
+            & .progresses{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+/* ===================      Skills designing      =================== */
