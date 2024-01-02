@@ -2,11 +2,13 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import data from '../data/progress.json';
 import skills from '../data/expertise.json';
+import work from '../data/services.json';
 
 function Home() {
 
   const progresses = data.progress;
   const expertize = skills.expertise;
+  const services = work.services;
   return (
     <main>
       <section id="hero">
@@ -174,6 +176,28 @@ function Home() {
         <div className="page">
           <h3>04</h3>
           <div className="line"></div>
+        </div>
+        <div className="contents">
+          <div className="title">
+            <p>What I do</p>
+            <h2>My Services</h2>
+            <div className="line"></div>
+          </div>
+          <div className="cards">
+            {services.map(services => (
+              <div className="card" key={services.id}>
+                <div className="icon">
+                  <div className="circle">
+                    <i className={services.icon}></i>
+                  </div>
+                </div>
+                <div className="desc">
+                  <h3>{services.title}</h3>
+                  <p>{services.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </main>
