@@ -170,6 +170,12 @@ function Home() {
           </div>
         </div>
       </section>
+      <section id="services">
+        <div className="page">
+          <h3>04</h3>
+          <div className="line"></div>
+        </div>
+      </section>
     </main>
   )
 }

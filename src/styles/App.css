@@ -728,7 +728,7 @@ main{
                             border-radius: 50%;
                         }
                         .line{
-                            height: 100px;
+                            height: 150px;
                             width: 2px;
                             background-color: var(--charcoal);
                         }
@@ -754,7 +754,7 @@ main{
                             flex-direction: column;
                             gap: .2rem;
                             & li{
-                                font-size: 18px;
+                                font-size: 15px;
                                 font-family: 'Poppins', sans-serif;
                                 color: var(--charcoal);
                             }
@@ -763,5 +763,40 @@ main{
                 }
             }
         }
+    }
+}
+
+@media screen AND (min-width: 0px) AND (max-width: 1024px){
+    #resume{
+        & .contents{
+            & .info{
+                & .expertize{
+                    gap: 2rem;
+                    & .expertise{
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: .3rem;
+                        & .lines{
+                            flex-direction: row;
+                            .line{
+                                height: 2px;
+                                width: 150px;
+                            }
+                        }
+                        & .desc{
+                            gap: .2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen AND (max-width: 767px){
+    #resume .contents .info .expertize .expertise .desc ul li{
+        font-size: 15px;
+    }
+    #resume .contents .info .intro p{
+        font-size: 15px;
     }
 }

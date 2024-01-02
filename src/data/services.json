@@ -1,0 +1,34 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "title": "Design and Development Solutions",
+            "description": "Graphic and UI/UX Design Services like Logo, branding, and UI/UX design, frontend website development with responsive design and interactive interfaces"
+        },
+        {
+            "id": 2,
+            "title": "Website Development and Maintenance",
+            "description": "Backend Website Development by building server-side applications, developing APIs. Content creation, management, and maintenance for websites."
+        },
+        {
+            "id": 3,
+            "title": "Custom Solutions and Consultation",
+            "description": "Web application development tailored to specific business needs. Training sessions and consultancy on design practices and website development strategies"
+        },
+        {
+            "id": 4,
+            "title": "System Analysis and Design",
+            "description": "Assessing existing systems, analyzing user requirements for proposing effective solutions. Designing scalable system architecture, providing maintenance"
+        },
+        {
+            "id": 5,
+            "title": "Integration and Database Management",
+            "description": "Integrating software systems. Database design, optimization, backup, and data migration strategies for efficient data storage and security"
+        },
+        {
+            "id": 6,
+            "title": "Process Improvement & Management",
+            "description": "Analyzing and automating workflows for greater efficiency. Guiding technology adoption and overseeing projects for successful execution."
+        }
+    ]
+}
