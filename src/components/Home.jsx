@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import Typewriter from 'typewriter-effect';
 import data from '../data/progress.json';
 import skills from '../data/expertise.json';
@@ -6,6 +6,9 @@ import work from '../data/services.json';
 import review from '../data/testimonials.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import 'swiper/css';
 function Home() {
@@ -14,6 +17,64 @@ function Home() {
   const expertize = skills.expertise;
   const services = work.services;
   const testimonials = review.testimonials;
+
+
+  const [names, setNames] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleNames = (event) => {
+    setNames(event.target.value);
+  }
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+  }
+  const handleSubject = (event) => {
+    setSubject(event.target.value);
+  }
+  const handleMessage = (event) => {
+    setMessage(event.target.value);
+  }
+
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
+  const send = (e) => {
+    e.preventDefault();
+    if(names.trim()==='' && email.trim()==='' && subject.trim()==='' && message.trim()===''){
+      return toast("Please fill out all fields", { type: "warning" });
+    }else if(names.trim()===''){
+      return toast("Name is required", { type: "warning" });
+    }else if(email.trim()===''){
+      return toast("Email is required", { type: "warning" });
+    }else if(subject.trim()===''){
+      return toast("Subject is required", { type: "warning" });
+    }else if(message.trim()===''){
+      return toast("Message is required", { type: "warning" });
+    }else{
+      // return toast("Free to continue", { type: "success" });
+      setLoading(true);
+      emailjs.sendForm('service_47c8oze', 'template_w2n2yol', form.current, 'IOhB6Nxg-_2KrNZWL')
+      .then((result) => {
+        toast.success("Message sent!");
+        setNames("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      }, (error) => {
+        toast.error("Message not sent, Try again");
+        setNames("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      })
+      .finally(() => {
+        // After the booking process is complete (success or error), revert loading state
+        setLoading(false);
+      });
+    }
+  }
   return (
     <main>
       <section id="hero">
@@ -229,6 +290,8 @@ function Home() {
           </Swiper>
         </div>
       </section>
+
+      {/* backend missing */}
       <section id="contact">
         <div className="page">
           <h3>07</h3>
@@ -247,16 +310,17 @@ function Home() {
             <p className='address'>+(250) - 791 - 847 - 408</p>
           </div>
           <div className="form">
-            <form action="" method="post">
-              <input type="text" name="" placeholder='Your full names' />
-              <input type="text" name="" placeholder='Your email' />
-              <input type="text" name="" placeholder='Subject' />
-              <textarea name="" placeholder='Your message'></textarea>
-              <button type="submit">Send message</button>
+            <form ref={form} autoComplete='off'>
+              <input type="text" value={names} onChange={handleNames} name="names" placeholder='Your full names' />
+              <input type="text" value={email} onChange={handleEmail} name="email" placeholder='Your email' />
+              <input type="text" value={subject} onChange={handleSubject} name="subject" placeholder='Subject' />
+              <textarea name="message" value={message} onChange={handleMessage} placeholder='Your message'></textarea>
+              <button type="button" onClick={send} disabled={loading}>{loading? 'Loading...' : 'Send message'}</button>
             </form>
           </div>
         </div>
       </section>
+      <ToastContainer />
     </main>
   )
 }

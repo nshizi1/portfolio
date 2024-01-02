@@ -130,14 +130,7 @@ header.sticky{
     }
 }
 
-
-/* ===================      Header designing      =================== */
-
-
-
-
 /* ===================      Home designing      =================== */
-
 
 main{
     width: 100%;
@@ -274,7 +267,6 @@ main{
     }
 }
 
-
 @media screen AND (max-width: 1260px) {
     main{
         & #hero{
@@ -378,13 +370,6 @@ main{
     }
 }
 
-/* ===================      Home designing      =================== */
-
-
-
-
-/* ===================      About designing      =================== */
-
 .page{
     position: absolute;
     top: 80px;
@@ -425,6 +410,9 @@ main{
         background-color: var(--charcoal);
     }
 }
+
+/* ===================      About designing      =================== */
+
 #about{
     background-color: var(--salt);
     position: relative;
@@ -564,9 +552,6 @@ main{
     }
 }
 
-/* ===================      About designing      =================== */
-
-
 /* ===================      Skills designing      =================== */
 
 #skills{
@@ -682,8 +667,7 @@ main{
     }
 }
 
-/* ===================      Skills designing      =================== */
-
+/* ===================      Resume designing      =================== */
 
 #resume{
     background-color: var(--salt);
@@ -801,6 +785,7 @@ main{
     }
 }
 
+/* ===================      Service designing      =================== */
 
 #services{
     background-color: var(--salt);
@@ -881,6 +866,8 @@ main{
     }
 }
 
+/* ===================      Testimonial designing      =================== */
+
 #testimonial{
     background-color: var(--salt);
     position: relative;
@@ -919,6 +906,9 @@ main{
         }
     }
 }
+
+/* ===================      Contact designing      =================== */
+
 #contact{
     background-color: var(--platinum);
     position: relative;
@@ -966,6 +956,7 @@ main{
                     font-family: 'Syne', sans-serif;
                 }
                 & button{
+                    width: -moz-fit-content;
                     width: fit-content;
                     padding: 10px 25px;
                     cursor: pointer;
