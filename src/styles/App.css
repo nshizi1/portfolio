@@ -980,3 +980,50 @@ main{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* ===================      Footer designing      =================== */
+footer{
+    padding: 0 10%;
+    background-color: var(--charcoal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--salt);
+    & span{
+        font-weight: 800;
+    }
+    & .text{
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        & a{
+            text-decoration: none;
+            font-weight: 700;
+            color: skyblue;
+            font-family: 'Syne', sans-serif;
+        }
+    }
+    & .social{
+        display: flex;
+        gap: 1.5rem;
+        background-color: var(--silver);
+        padding: 15px;
+        & i{
+            color: var(--charcoal);
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen AND (min-width: 0px) AND (max-width: 1024px){
+    footer{
+        padding-top: 10px;
+        flex-direction: column;
+        & .social{
+            background-color: transparent;
+            & i{
+                color: var(--silver);
+            }
+        }
+    }
+}
