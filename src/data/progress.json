@@ -3,12 +3,12 @@
         {
             "id": "1",
             "name": "MS Word",
-            "width": 95
+            "width": 100
         },
         {
             "id": "2",
             "name": "MS Excel",
-            "width": 90
+            "width": 95
         },
         {
             "id": "3",
@@ -38,7 +38,7 @@
         {
             "id": "8",
             "name": "CSS",
-            "width": 90
+            "width": 92
         },
         {
             "id": "9",
@@ -52,13 +52,13 @@
         },
         {
             "id": "11",
-            "name": "Node JS",
-            "width": 40
+            "name": "PHP",
+            "width": 100
         },
         {
             "id": "12",
-            "name": "PHP",
-            "width": 100
+            "name": "Node JS",
+            "width": 40
         },
         {
             "id": "13",

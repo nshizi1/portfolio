@@ -1,10 +1,12 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import data from '../data/progress.json';
+import skills from '../data/expertise.json';
 
 function Home() {
 
   const progresses = data.progress;
+  const expertize = skills.expertise;
   return (
     <main>
       <section id="hero">
@@ -19,7 +21,7 @@ function Home() {
               <a href="#contact" className="btn-get-started">Say hello</a>
             </div>
             <div className="image">
-              <img src={require("../images/hero.jpg")} alt="Developer's profile" />
+              <img src={require("../images/imageOne.jpg")} alt="Developer's profile" />
             </div>
           </div>
           <div className="social">
@@ -40,7 +42,7 @@ function Home() {
         </div>
         <div className="contents">
           <div className="image">
-            <img src={require("../images/hero.jpg")} alt="" />
+            <img src={require("../images/imageOne.jpg")} alt="" />
           </div>
           <div className="texts">
             <div className="title">
@@ -126,6 +128,36 @@ function Home() {
               </div>
             </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section id="resume">
+        <div className="page">
+          <h3>03</h3>
+          <div className="line"></div>
+        </div>
+        <div className="contents">
+          <div className="title">
+            <p>Resume</p>
+            <h2>My Expertise</h2>
+            <div className="line"></div>
+          </div>
+          <div className="info">
+            <div className="intro">
+              <p>I aim to take on the roles of a software developer, UI/UX designer. I'm enthusiastic about exploring fresh opportunities and continually expanding my skill set. You can access my resume <a href="facebook.com">here</a> for further details.</p>
+            </div>
+            <div className="expertize">
+              {expertize.map(expertise => (
+                <div className="expertise" key={expertise.id}>
+                  <p className="date">{expertise.date}</p>
+                  <p className="date">{expertise.name}</p>
+                  <p className="date">{expertise.company}</p>
+                  <p className="date">{expertise.one}</p>
+                  <p className="date">{expertise.two}</p>
+                  <p className="date">{expertise.three}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
