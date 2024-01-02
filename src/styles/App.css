@@ -96,7 +96,7 @@ header.sticky{
     box-shadow: 0 0 20px 5px var(--gray);
 }
 
-@media screen AND (max-width: 830px){
+@media screen AND (max-width: 1024px){
     header .logo img{
         width: 40px;
     }
@@ -917,5 +917,75 @@ main{
 
             }
         }
+    }
+}
+#contact{
+    background-color: var(--platinum);
+    position: relative;
+    & .contents{
+        padding: 80px 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        & .text{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            & .title{
+                margin: 0;
+            }
+            & p:nth-child(2), & .address{
+                font-size: 18px;
+                color: var(--charcoal);
+                font-family: 'Poppins', sans-serif;
+            }
+            & .address{
+                color: var(--charcoal);
+                font-weight: 600;
+            }
+        }
+        & .form{
+            & form{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                & textarea{
+                    resize: none;
+                    height: 150px;
+                }
+                & textarea::-webkit-scrollbar{
+                    width: 5px;
+                }
+                & input, & textarea{
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    padding: 10px 0 3px 10px;
+                    border-bottom: solid 2px var(--charcoal);
+                    font-size: 15px;
+                    font-family: 'Syne', sans-serif;
+                }
+                & button{
+                    width: fit-content;
+                    padding: 10px 25px;
+                    cursor: pointer;
+                    border: none;
+                    background-color: var(--charcoal);
+                    font-size: 18px;
+                    color: var(--salt);
+                    font-family: 'Syne', sans-serif;
+                    transition: 300ms ease;
+                    border-radius: 5px;
+                }
+                & button:hover{
+                    background-color: var(--black);
+                }
+            }
+        }
+    }
+}
+@media screen AND (min-width: 0px) AND (max-width: 1024px){
+    #contact .contents{
+        grid-template-columns: repeat(1, 1fr);
     }
 }

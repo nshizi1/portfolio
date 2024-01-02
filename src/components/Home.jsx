@@ -205,9 +205,10 @@ function Home() {
           </div>
         </div>
       </section>
+      {/* here will go portfolio section */}
       <section id="testimonial">
         <div className="page">
-          <h3>05</h3>
+          <h3>06</h3>
           <div className="line"></div>
         </div>
         <div className="contents">
@@ -226,6 +227,34 @@ function Home() {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+      </section>
+      <section id="contact">
+        <div className="page">
+          <h3>07</h3>
+          <div className="line"></div>
+        </div>
+        <div className="contents">
+          <div className="text">
+            <div className="title">
+              <p>Get in touch</p>
+              <h2>Contact me</h2>
+              <div className="line"></div>
+            </div>
+            <p>You can connect with me via several social media channels, reach out by phone, or send an email to get in touch with me</p>
+            <p className='address'>KK 105 st, Kigali, Nyarugunga</p>
+            <p className='address'>wilson.codecraft@gmail.com</p>
+            <p className='address'>+(250) - 791 - 847 - 408</p>
+          </div>
+          <div className="form">
+            <form action="" method="post">
+              <input type="text" name="" placeholder='Your full names' />
+              <input type="text" name="" placeholder='Your email' />
+              <input type="text" name="" placeholder='Subject' />
+              <textarea name="" placeholder='Your message'></textarea>
+              <button type="submit">Send message</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
