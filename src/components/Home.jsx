@@ -3,12 +3,17 @@ import Typewriter from 'typewriter-effect';
 import data from '../data/progress.json';
 import skills from '../data/expertise.json';
 import work from '../data/services.json';
+import review from '../data/testimonials.json';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 
+import 'swiper/css';
 function Home() {
 
   const progresses = data.progress;
   const expertize = skills.expertise;
   const services = work.services;
+  const testimonials = review.testimonials;
   return (
     <main>
       <section id="hero">
@@ -198,6 +203,29 @@ function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="testimonial">
+        <div className="page">
+          <h3>05</h3>
+          <div className="line"></div>
+        </div>
+        <div className="contents">
+          <div className="title">
+            <p>Reviews</p>
+            <h2>Testimonials</h2>
+            <div className="line"></div>
+          </div>
+          <Swiper className='cards' spaceBetween={10} slidesPerView={1} loop={true} breakpoints={{ 768:{ slidesPerView: 2, spaceBetween: 20, }, 1024:{ slidesPerView: 3, spaceBetween: 30, }, }} autoplay={{ delay: 5000, disableOnInteraction: false, }} pagination={{ clickable: true }} scrollbar={{ draggable: true }} modules={[Autoplay]} >
+            {testimonials.map(testimonials => (
+              <SwiperSlide className='card'>
+                <img src={require(`../images/testimonials/${testimonials.image}`)} alt="" />
+                <h3>{testimonials.names}</h3>
+                <h4>{testimonials.title}</h4>
+                <p>{testimonials.testimonial}</p>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
     </main>
