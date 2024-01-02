@@ -149,12 +149,21 @@ function Home() {
             <div className="expertize">
               {expertize.map(expertise => (
                 <div className="expertise" key={expertise.id}>
-                  <p className="date">{expertise.date}</p>
-                  <p className="date">{expertise.name}</p>
-                  <p className="date">{expertise.company}</p>
-                  <p className="date">{expertise.one}</p>
-                  <p className="date">{expertise.two}</p>
-                  <p className="date">{expertise.three}</p>
+                  <p className="time">{expertise.date}</p>
+                  <div className="lines">
+                    <div className="circle"></div>
+                    <div className="line"></div>
+                    <div className="circle"></div>
+                  </div>
+                  <div className="desc">
+                    <h3 className="company">{expertise.company}</h3>
+                    <p className="name">{expertise.name}</p>
+                    <ul>
+                      <li><i class="fa-solid fa-arrow-right"></i> {expertise.one}</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> {expertise.two}</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> {expertise.three}</li>
+                    </ul>
+                  </div>
                 </div>
               ))}
             </div>
