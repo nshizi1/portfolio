@@ -9,6 +9,7 @@ import { Autoplay } from 'swiper/modules';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Portfolio from './portfolio/portfolio';
 
 import 'swiper/css';
 function Home() {
@@ -110,7 +111,7 @@ function Home() {
         </div>
         <div className="contents">
           <div className="image">
-            <img src={require("../images/imageOne.jpg")} alt="" />
+            <img src={require("../images/imageTwo.jpg")} alt="" />
           </div>
           <div className="texts">
             <div className="title">
@@ -267,6 +268,7 @@ function Home() {
         </div>
       </section>
       {/* here will go portfolio section */}
+      <Portfolio />
       <section id="testimonial">
         <div className="page">
           <h3>06</h3>
@@ -290,8 +292,6 @@ function Home() {
           </Swiper>
         </div>
       </section>
-
-      {/* backend missing */}
       <section id="contact">
         <div className="page">
           <h3>07</h3>
