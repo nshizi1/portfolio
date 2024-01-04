@@ -2,8 +2,38 @@
     "portfolio": [
         {
             "id": 1,
-            "link": "lorem",
-            "image": ""
+            "link": "https://sosts.vercel.app/",
+            "image": "websiteOne.png"
+        },
+        {
+            "id": 2,
+            "link": "https://trave-movies.vercel.app/",
+            "image": "websiteThree.png"
+        },
+        {
+            "id": 3,
+            "link": "https://hook-agency.vercel.app/",
+            "image": "websiteTwo.png"
+        },
+        {
+            "id": 4,
+            "link": "https://fitnesshub-ochre.vercel.app/",
+            "image": "websiteFive.png"
+        },
+        {
+            "id": 5,
+            "link": "https://e-haha.vercel.app/",
+            "image": "websiteFour.png"
+        },
+        {
+            "id": 6,
+            "link": "https://beatfuse.vercel.app/",
+            "image": "websiteSix.png"
+        },
+        {
+            "id": 7,
+            "link": "https://goldenmarket.vercel.app/",
+            "image": "websiteSeven.png"
         }
     ]
 }

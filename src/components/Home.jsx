@@ -4,6 +4,7 @@ import data from '../data/progress.json';
 import skills from '../data/expertise.json';
 import work from '../data/services.json';
 import review from '../data/testimonials.json';
+import projects from '../data/portfolio.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import emailjs from '@emailjs/browser';
@@ -17,6 +18,7 @@ function Home() {
   const expertize = skills.expertise;
   const services = work.services;
   const testimonials = review.testimonials;
+  const portfolio = projects.portfolio;
 
 
   const [names, setNames] = useState('');
@@ -119,7 +121,7 @@ function Home() {
               <div className="line"></div>
             </div>
             <div className="info">
-              <p>I'm a highly-experienced Graphic Designer and Website Developer with the experience of over 2 years, and I'm able to create a lot of different graphic designs and different types of websites.</p>
+              <p>I'm a highly-experienced Graphic Designer and Website Developer with the experience of over 2 years, and I'm able to create a lot of different graphic designs and different types of websites including static and dynamic.</p>
               <div className="cards">
                 <div className="card">
                   <i class="fa-solid fa-gear"></i>
@@ -136,8 +138,14 @@ function Home() {
                   <h2>Support</h2>
                   <p>Online 24/7</p>
                 </div>
+                <div className="card">
+                  <i class="fa-brands fa-github"></i>
+                  <h2>Github</h2>
+                  <p>300+ contributions</p>
+                </div>
               </div>
-              <a href="cv.pdf" download={true}><button>Download CV</button></a>
+              <a href="./" ><button>Download CV</button></a>
+              {/* <a href="cv.pdf" download={true}><button>Download CV</button></a> */}
             </div>
           </div>
         </div>
@@ -212,7 +220,7 @@ function Home() {
           </div>
           <div className="info">
             <div className="intro">
-              <p>I aim to take on the roles of a software developer, UI/UX designer. I'm enthusiastic about exploring fresh opportunities and continually expanding my skill set. You can access my resume <a href="cv.pdf" download={true}>here</a> for further details.</p>
+              <p>I aim to take on the roles of a software developer, UI/UX designer. I'm enthusiastic about exploring fresh opportunities and continually expanding my skill set. You can access my resume <a href="./">here</a> for further details.</p>
             </div>
             <div className="expertize">
               {expertize.map(expertise => (
@@ -277,60 +285,14 @@ function Home() {
             <div className="line"></div>
           </div>
           <div className="cards">
-            <div className="card">
-              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
-              <div className="li">
-                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+            {portfolio.map(portfolio => (
+              <div className="card" key={portfolio.id}>
+                <img src={require(`../images/portfolio/${portfolio.image}`)} alt={portfolio.image} />
+                <div className="li">
+                  <a href={portfolio.link} target='_blank' rel="noreferrer"><i class="fa-solid fa-link"></i></a>
+                </div>
               </div>
-            </div>
-            <div className="card">
-              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
-              <div className="li">
-                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div className="card">
-              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
-              <div className="li">
-                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div className="card">
-              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
-              <div className="li">
-                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div className="card">
-              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
-              <div className="li">
-                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div className="card">
-              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
-              <div className="li">
-                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div className="card">
-              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
-              <div className="li">
-                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div className="card">
-              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
-              <div className="li">
-                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div className="card">
-              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
-              <div className="li">
-                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -347,7 +309,7 @@ function Home() {
           </div>
           <Swiper className='cards' spaceBetween={10} slidesPerView={1} loop={true} breakpoints={{ 768:{ slidesPerView: 2, spaceBetween: 20, }, 1024:{ slidesPerView: 3, spaceBetween: 30, }, }} autoplay={{ delay: 5000, disableOnInteraction: false, }} pagination={{ clickable: true }} scrollbar={{ draggable: true }} modules={[Autoplay]} >
             {testimonials.map(testimonials => (
-              <SwiperSlide className='card'>
+              <SwiperSlide className='card' key={testimonials.id}>
                 <img src={require(`../images/testimonials/${testimonials.image}`)} alt="" />
                 <h3>{testimonials.names}</h3>
                 <h4>{testimonials.title}</h4>

@@ -125,7 +125,7 @@ header.sticky{
         height: 100%;
         width: 100%;
         background-color: var(--black);
-        transition: 1s ease;
+        transition: 1s cubic-bezier(0,.87,1,.67);
         transform: translateY(-100vh);
         display: flex;
         align-items: center;
@@ -699,6 +699,12 @@ main{
                     right: 0;
                 }
             }
+            & .card:nth-child(1){
+                grid-column: span 2;
+            }
+            & .card:nth-child(2){
+                grid-row: span 2;
+            }
         }
     }
 }
@@ -950,6 +956,15 @@ footer{
     #portfolio .contents .cards{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+        & .card:nth-child(1){
+            grid-column: span 1;
+        }
+        & .card:nth-child(2){
+            grid-row: span 1;
+        }
+        & .card:nth-child(5){
+            grid-column: span 2;
+        }
     }
     #contact .contents{
         grid-template-columns: repeat(1, 1fr);
@@ -1071,6 +1086,9 @@ footer{
     #portfolio .contents .cards{
         grid-template-columns: repeat(1, 1fr);
         gap: .5rem;
+        & .card:nth-child(5){
+            grid-column: span 1;
+        }
     }
 }
 
