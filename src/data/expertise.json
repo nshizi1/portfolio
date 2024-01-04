@@ -4,15 +4,15 @@
             "id": 1,
             "name": "Fullstack Developer",
             "date": "2022-Now",
-            "company": "SOS THS, Rwanda",
+            "company": "SOS High School, Kinyinya",
             "one": "System analysis for the website project and also worked in the designing and development of the school's website.",
             "two": "Lead in the backend development of the website and in the designing and development of it's database."
         },
         {
             "id": 2,
-            "name": "Trave Technologies",
+            "name": "Fullstack Developer",
             "date": "2023-Now",
-            "company": "SOS THS, Rwanda",
+            "company": "Trave Technologies, Kigali",
             "one": "Designed the UI/UX for both the web Application and the mobile application and the development of the website.",
             "two": "Lead in the the backend development of the website using Node JS and development of the database."
         }

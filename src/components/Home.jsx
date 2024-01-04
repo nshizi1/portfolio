@@ -9,7 +9,6 @@ import { Autoplay } from 'swiper/modules';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Portfolio from './portfolio/portfolio';
 
 import 'swiper/css';
 function Home() {
@@ -213,7 +212,7 @@ function Home() {
           </div>
           <div className="info">
             <div className="intro">
-              <p>I aim to take on the roles of a software developer, UI/UX designer. I'm enthusiastic about exploring fresh opportunities and continually expanding my skill set. You can access my resume <a href="facebook.com">here</a> for further details.</p>
+              <p>I aim to take on the roles of a software developer, UI/UX designer. I'm enthusiastic about exploring fresh opportunities and continually expanding my skill set. You can access my resume <a href="cv.pdf" download={true}>here</a> for further details.</p>
             </div>
             <div className="expertize">
               {expertize.map(expertise => (
@@ -266,8 +265,75 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* here will go portfolio section */}
-      <Portfolio />
+      <section id="portfolio">
+        <div className="page">
+          <h3>05</h3>
+          <div className="line"></div>
+        </div>
+        <div className="contents">
+          <div className="title">
+            <p>Some of my work</p>
+            <h2>My Portfolio</h2>
+            <div className="line"></div>
+          </div>
+          <div className="cards">
+            <div className="card">
+              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
+              <div className="li">
+                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
+              <div className="li">
+                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
+              <div className="li">
+                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
+              <div className="li">
+                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
+              <div className="li">
+                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
+              <div className="li">
+                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
+              <div className="li">
+                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
+              <div className="li">
+                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={require("../images/portfolio/websiteFour.png")} alt="" />
+              <div className="li">
+                <a href="https://www.jordan-wright.com/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="testimonial">
         <div className="page">
           <h3>06</h3>
