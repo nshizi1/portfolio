@@ -553,7 +553,7 @@ main{
                             border-radius: 50%;
                         }
                         .line{
-                            height: 150px;
+                            height: 100px;
                             width: 2px;
                             background-color: var(--charcoal);
                         }

@@ -163,19 +163,19 @@ function Home() {
             </div>
             <div className="card">
               <div className="shape"></div>
-              <p className="time">20211-2017</p>
+              <p className="time">2018-2021</p>
               <p className="school">Ordinary Level</p>
               <p className="desc">École secondaire Kanombe is a secondary school located in Kigali, Rwanda. Studied from senior one to senior three.</p>
             </div>
             <div className="card">
               <div className="shape"></div>
-              <p className="time">20211-2017</p>
+              <p className="time">2021-2022</p>
               <p className="school">Computer Application</p>
-              <p className="desc">At Gikonko Technical Secondary school, located in Gisagara district of the southern province. Studied there all about designing.</p>
+              <p className="desc">At Gikonko Technical Secondary school, located in Gisagara district of the southern province. Studied there computer application and all about designing.</p>
             </div>
             <div className="card">
               <div className="shape"></div>
-              <p className="time">20211-2017</p>
+              <p className="time">2022-2024</p>
               <p className="school">Software Development</p>
               <p className="desc">At SOS Technical high school, it offers technical education in three trades. It also ordinary level in three years.it is located in kigali city, Gasabo district.</p>
             </div>
@@ -230,7 +230,6 @@ function Home() {
                     <ul>
                       <li><i class="fa-solid fa-arrow-right"></i> {expertise.one}</li>
                       <li><i class="fa-solid fa-arrow-right"></i> {expertise.two}</li>
-                      <li><i class="fa-solid fa-arrow-right"></i> {expertise.three}</li>
                     </ul>
                   </div>
                 </div>
