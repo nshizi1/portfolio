@@ -120,7 +120,7 @@ function Home() {
               <div className="line"></div>
             </div>
             <div className="info">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius, velit quisquam minima et vel suscipit error reprehenderit mollitia laboriosam facilis iste ea illum veniam neque libero amet molestias recusandae.</p>
+              <p>I'm a highly-experienced Graphic Designer and Website Developer with the experience of over 2 years, and I'm able to create a lot of different graphic designs and different types of websites.</p>
               <div className="cards">
                 <div className="card">
                   <i class="fa-solid fa-gear"></i>
@@ -130,7 +130,7 @@ function Home() {
                 <div className="card">
                   <i class="fa-solid fa-rectangle-list"></i>
                   <h2>Completed</h2>
-                  <p>10+ years</p>
+                  <p>10+ projects</p>
                 </div>
                 <div className="card">
                   <i class="fa-solid fa-headset"></i>
@@ -157,27 +157,27 @@ function Home() {
           <div className="cards">
             <div className="card">
               <div className="shape"></div>
-              <p className="time">20211-2017</p>
+              <p className="time">20212-2017</p>
               <p className="school">Primary school</p>
-              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, a iure molestiae ea beatae voluptatem aspernatur enim adipisci, excepturi ipsum autem exercitationem quos rerum?</p>
+              <p className="desc">At Rwimbogo Primary School, a private primary school located in Kigali, the capital city of Rwanda. This school serves students from nursery to primary grade 6.</p>
             </div>
             <div className="card">
               <div className="shape"></div>
               <p className="time">20211-2017</p>
-              <p className="school">Primary school</p>
-              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, a iure molestiae ea beatae voluptatem aspernatur enim adipisci, excepturi ipsum autem exercitationem quos rerum?</p>
+              <p className="school">Ordinary Level</p>
+              <p className="desc">École secondaire Kanombe is a secondary school located in Kigali, Rwanda. Studied from senior one to senior three.</p>
             </div>
             <div className="card">
               <div className="shape"></div>
               <p className="time">20211-2017</p>
-              <p className="school">Primary school</p>
-              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, a iure molestiae ea beatae voluptatem aspernatur enim adipisci, excepturi ipsum autem exercitationem quos rerum?</p>
+              <p className="school">Computer Application</p>
+              <p className="desc">At Gikonko Technical Secondary school, located in Gisagara district of the southern province. Studied there all about designing.</p>
             </div>
             <div className="card">
               <div className="shape"></div>
               <p className="time">20211-2017</p>
-              <p className="school">Primary school</p>
-              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, a iure molestiae ea beatae voluptatem aspernatur enim adipisci, excepturi ipsum autem exercitationem quos rerum?</p>
+              <p className="school">Software Development</p>
+              <p className="desc">At SOS Technical high school, it offers technical education in three trades. It also ordinary level in three years.it is located in kigali city, Gasabo district.</p>
             </div>
           </div>
           <div className="title">
