@@ -74,6 +74,11 @@
             "id": "15",
             "name": "MySQL",
             "width": 92
+        },
+        {
+            "id": "16",
+            "name": "MongoBD",
+            "width": 32
         }
     ]
 }
