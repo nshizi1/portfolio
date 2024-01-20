@@ -34,6 +34,13 @@
             "title": "Software Developer",
             "image": "tona.jpg",
             "testimonial": "I am truly impressed by the exceptional skills of WIlson and innovation displayed by this highly advanced software engineer. He expertise shines through in every project"
+        },
+        {
+            "id": 6,
+            "names": "Ineza Magnifique",
+            "title": "Software Developer",
+            "image": "magnifique.jpg",
+            "testimonial": "His work is amazing, beautiful and perfect. Thankful to Wilson for sharing his innovation, skills and devotion to us! He never disappoints and we're all excited to see his next adventurous sites."
         }
     ]
 }
