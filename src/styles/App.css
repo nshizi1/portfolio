@@ -36,26 +36,75 @@
 /* ===================      Header designing      =================== */
 
 header{
-    & a::after{
-        content: '';
-        width: 100%;
-        height: 3px;
-        background-color: var(--gray);
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        border-radius: 4px;
-        transform: scaleX(0);
-        transition: transform 500ms ease;
-        transform-origin: right;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    gap: 3rem;
+    /* background-color: var(--platinum); */
+    background-color: transparent;
+    padding: 15px 10%;
+    align-items: center;
+    transition: 1000ms ease;
+    z-index: 100;
+    & img{
+        width: 50px;
     }
-    & a:hover::after{
-        transform-origin: left;
-        transform: scaleX(1);
+    & nav{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        & a{
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+            text-decoration: none;
+            font-size: 15px;
+            color: var(--gray);
+            transition: 300ms ease;
+            text-transform: capitalize;
+            font-weight: 600;
+            position: relative;
+        }
+        & a::after{
+            content: '';
+            width: 100%;
+            height: 3px;
+            background-color: var(--gray);
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            border-radius: 4px;
+            transform: scaleX(0);
+            transition: transform 500ms ease;
+            transform-origin: right;
+        }
+        & a:hover::after{
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+        
     }
-} 
+    & .fa-xmark, & .fa-bars{
+        font-size: 35px;
+        color: var(--gray);
+        visibility: hidden;
+        opacity: none;
+        display: none;
+    }
+    & .fa-bars{
+        display: none;
+    }
+}
 
-
+header.sticky{
+    /* background-color: var(--platinum); */
+    background-size: 250% 250% !important;
+    background: linear-gradient( to left, white, var(--silver), var(--platinum));
+    box-shadow: 0 0 20px 5px var(--gray);
+    animation: gradient 10s ease-in-out infinite;
+}
 
 @media screen AND (max-width: 1024px){
     header .logo img{
@@ -382,13 +431,14 @@ main{
             display: grid;
             margin-bottom: 100px;
             & .card{
-                background-color: var(--silver);
+                background-size: 250% 250% !important;
                 padding: 20px;
                 width: 50%;
                 position: relative;
                 display: flex;
                 flex-direction: column;
                 gap: .2rem;
+                animation: gradient 5s ease infinite;
                 & .shape{
                     position: absolute;
                     width: 15px;
@@ -411,7 +461,9 @@ main{
                     color: var(--charcoal);
                 }
             }
+            
             & .card:nth-child(even){
+                background: linear-gradient( to left, var(--silver), var(--platinum), var(--salt));
                 border-right: solid 4px var(--charcoal);
                 margin-left: 2px;
                 & .shape{
@@ -420,6 +472,7 @@ main{
                 }
             }
             & .card:nth-child(odd){
+                background: linear-gradient( to left, var(--salt), var(--platinum), var(--silver));
                 margin-left: auto;
                 margin-right: 2px;
                 border-left: solid 4px var(--charcoal);
@@ -456,6 +509,18 @@ main{
                 }
             }
         }
+    }
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
     }
 }
 

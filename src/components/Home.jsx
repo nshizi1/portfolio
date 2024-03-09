@@ -10,6 +10,7 @@ import { Autoplay } from 'swiper/modules';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'animate.css';
 
 import 'swiper/css';
 function Home() {
@@ -85,12 +86,12 @@ function Home() {
             <div className="texts">
               <h1 data-aos="fade-up" data-aos-duration="1000">Wilson Nshizirungu</h1>
               <div className="desc">
-                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><Typewriter options={{ autoStart: true,loop: true,delay: 100,strings: [" Fullstack website developer", "Graphic Designer", "Student", "Collaborator & Contributor", "Freelancer"]}} /></h3>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">I am a software developer situated in Rwanda. Over the span of my short professional career, I have acquired considerable expertise and made substantial strides in enhancing my skill set.</p>
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><Typewriter options={{ autoStart: true,loop: true,delay: 100,strings: [" Fullstack website developer", "Graphic Designer", "Student", "Collaborator & Contributor", "Freelancer"]}} /></h3>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">I am a software developer situated in Rwanda. Over the span of my short professional career, I have acquired considerable expertise and made substantial strides in enhancing my skill set.</p>
               </div>
-              <a href="#contact" className="btn-get-started">Say hello</a>
+                <a  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" href="#contact" className="btn-get-started">Say hello</a>
             </div>
-            <div className="image">
+            <div data-aos="zoom-in" data-aos-duration="2000"  className="image">
               <img src={require("../images/imageOne.jpg")} alt="Developer's profile" />
             </div>
           </div>
@@ -117,7 +118,7 @@ function Home() {
           <div className="texts">
             <div className="title">
               <p>Discover</p>
-              <h2>About Me</h2>
+              <h2 className='animate__backInRight'>About Me</h2>
               <div className="line"></div>
             </div>
             <div className="info">
