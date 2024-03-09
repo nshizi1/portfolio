@@ -84,7 +84,7 @@ header{
             transform-origin: left;
             transform: scaleX(1);
         }
-        
+
     }
     & .fa-xmark, & .fa-bars{
         font-size: 35px;
@@ -769,8 +769,14 @@ main{
 /* ===================      Contact designing      =================== */
 
 #contact{
-    background-color: var(--platinum);
+    background-color:hsla(280,0%,55%,1);
+    background-image:
+    radial-gradient(at 0% 44%, hsla(225,8%,90%,1) 0px, transparent 50%),
+    radial-gradient(at 97% 100%, hsla(240,7%,97%,1) 0px, transparent 50%),
+    radial-gradient(at 82% 31%, hsla(210,1%,78%,1) 0px, transparent 50%),
+    radial-gradient(at 49% 64%, hsla(225,9%,40%,1) 0px, transparent 50%);
     position: relative;
+    border-image: fill 0 linear-gradient(transparent, transparent, transparent, transparent, var(--charcoal));
     & .contents{
         padding: 80px 10%;
         display: grid;
@@ -861,10 +867,10 @@ footer{
     & .social{
         display: flex;
         gap: 1.5rem;
-        background-color: var(--silver);
+        /* background-color: var(--silver); */
         padding: 15px;
         & i{
-            color: var(--charcoal);
+            color: var(--salt);
             font-size: 20px;
         }
     }

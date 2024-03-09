@@ -28,7 +28,7 @@ function Home() {
   const [message, setMessage] = useState('');
 
   const handleNames = (event) => {
-    setNames(event.target.value);
+    setNames(event.target.value); 
   }
   const handleEmail = (event) => {
     setEmail(event.target.value);
