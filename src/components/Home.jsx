@@ -19,29 +19,10 @@ function Home() {
     const devImages = document.querySelectorAll(".devImage");
 
     devImages.forEach((devImage) => {
-      //   // Add data-tilt attribute and data-tilt-scale option
       devImage.setAttribute("data-tilt", "");
-      devImage.setAttribute("data-tilt-full-page-listening", "");
-      devImage.setAttribute("data-tilt-reverse", "true");
 
       VanillaTilt.init(devImage, {
         max: 10,
-        speed: 1000,
-      });
-    });
-
-    const cardsTilt = document.querySelectorAll(".cardTilt");
-
-    cardsTilt.forEach((cardTilt) => {
-      cardTilt.setAttribute("data-tilt", "");
-      cardTilt.setAttribute("data-tilt-axis", "x");
-      // Add transform-style: preserve-3d to tilt element
-      cardTilt.style.transformStyle = "preserve-3d";
-      // Add transform: perspective(1000px) to tilt element
-      cardTilt.style.transform = "perspective(500px)";
-      
-      VanillaTilt.init(cardTilt, {
-        max: 15,
         speed: 5000,
       });
     });
@@ -165,25 +146,25 @@ function Home() {
             <div className="info">
               <p>I'm a highly-experienced Graphic Designer and Website Developer with the experience of over 2 years, and I'm able to create a lot of different graphic designs and different types of websites including static and dynamic.</p>
               <div className="cards">
-                <div className="cardTilt card">
-                  <i style={{ transform: "translateZ(80px)" }} class="fa-solid fa-gear"></i>
-                  <h2 style={{ transform: "translateZ(80px)" }}>Experience</h2>
-                  <p style={{ transform: "translateZ(80px)" }}>3+ years</p>
+                <div className="card">
+                  <i  class="fa-solid fa-gear"></i>
+                  <h2 >Experience</h2>
+                  <p >3+ years</p>
                 </div>
-                <div className="cardTilt card">
-                  <i style={{ transform: "translateZ(80px)" }} class="fa-solid fa-rectangle-list"></i>
-                  <h2 style={{ transform: "translateZ(80px)" }}>Completed</h2>
-                  <p style={{ transform: "translateZ(80px)" }}>10+ projects</p>
+                <div className="card">
+                  <i  class="fa-solid fa-rectangle-list"></i>
+                  <h2 >Completed</h2>
+                  <p >10+ projects</p>
                 </div>
-                <div className="cardTilt card">
-                  <i style={{ transform: "translateZ(80px)" }} class="fa-solid fa-headset"></i>
-                  <h2 style={{ transform: "translateZ(80px)" }}>Support</h2>
-                  <p style={{ transform: "translateZ(80px)" }}>Online 24/7</p>
+                <div className="card">
+                  <i  class="fa-solid fa-headset"></i>
+                  <h2 >Support</h2>
+                  <p >Online 24/7</p>
                 </div>
-                <div className="cardTilt card">
-                  <i style={{ transform: "translateZ(80px)" }} class="fa-brands fa-github"></i>
-                  <h2 style={{ transform: "translateZ(80px)" }}>Github</h2>
-                  <p style={{ transform: "translateZ(80px)" }}>300+ contributions</p>
+                <div className="card">
+                  <i  class="fa-brands fa-github"></i>
+                  <h2 >Github</h2>
+                  <p >300+ contributions</p>
                 </div>
               </div>
               <a href="./" ><button>Download CV</button></a>
