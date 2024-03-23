@@ -193,8 +193,13 @@ main{
                         gap: 1rem;
                         & h3{
                             color: var(--black);
+                            display: flex;
+                            gap: .2em;
+                            font-weight: 400;
                             font-size: 18px;
-                            font-weight: 600;
+                            & .span{
+                                font-weight: 600;
+                            }
                         }
                         & p{
                             font-size: 1rem;

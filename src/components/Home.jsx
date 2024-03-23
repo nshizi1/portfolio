@@ -108,7 +108,7 @@ function Home() {
             <div className="texts">
               <h1 data-aos="fade-up" data-aos-duration="1000">Wilson Nshizirungu</h1>
               <div className="desc">
-                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><Typewriter options={{ autoStart: true,loop: true,delay: 100,strings: [" Fullstack website developer", "Graphic Designer", "Student", "Collaborator & Contributor", "Freelancer"]}} /></h3>
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><span>I am a </span><span className='span'><Typewriter options={{ autoStart: true,loop: true,delay: 100,strings: ["Fullstack website developer", "Graphic Designer", "Student", "Collaborator & Contributor", "Freelancer"]}} /></span></h3>
                 <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">I am a software developer situated in Rwanda. Over the span of my short professional career, I have acquired considerable expertise and made substantial strides in enhancing my skill set.</p>
               </div>
                 <a  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" href="#contact" className="btn-get-started">Say hello</a>
