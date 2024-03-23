@@ -108,7 +108,7 @@ function Home() {
             <div className="texts">
               <h1 data-aos="fade-up" data-aos-duration="1000">Wilson Nshizirungu</h1>
               <div className="desc">
-                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><span>I am a </span><span className='span'><Typewriter options={{ autoStart: true,loop: true,delay: 100,strings: ["Fullstack website developer", "Graphic Designer", "Student", "Collaborator & Contributor", "Freelancer"]}} /></span></h3>
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><span>I am a </span><span className='span'><Typewriter options={{ autoStart: true,loop: true,delay: 20,deleteSpeed: 20,strings: ["Fullstack website developer", "Graphic Designer", "Student", "Collaborator & Contributor", "Freelancer"]}} /></span></h3>
                 <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">I am a software developer situated in Rwanda. Over the span of my short professional career, I have acquired considerable expertise and made substantial strides in enhancing my skill set.</p>
               </div>
                 <a  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" href="#contact" className="btn-get-started">Say hello</a>
@@ -164,7 +164,7 @@ function Home() {
                 <div className="card">
                   <i  class="fa-brands fa-github"></i>
                   <h2 >Github</h2>
-                  <p >300+ contributions</p>
+                  <p >400+ contributions</p>
                 </div>
               </div>
               <a href="./" ><button>Download CV</button></a>
@@ -187,9 +187,9 @@ function Home() {
           <div className="cards">
             <div className="card">
               <div className="shape"></div>
-              <p className="time">20212-2017</p>
+              <p className="time">2012-2017</p>
               <p className="school">Primary school</p>
-              <p className="desc">At Rwimbogo Primary School, a private primary school located in Kigali, the capital city of Rwanda. This school serves students from nursery to primary grade 6.</p>
+              <p className="desc">At Rwimbogo Primary School, a primary school located in Kigali, the capital city of Rwanda. This school serves students from nursery to primary grade 6.</p>
             </div>
             <div className="card">
               <div className="shape"></div>
@@ -199,13 +199,7 @@ function Home() {
             </div>
             <div className="card">
               <div className="shape"></div>
-              <p className="time">2021-2022</p>
-              <p className="school">Computer Application</p>
-              <p className="desc">At Gikonko Technical Secondary school, located in Gisagara district of the southern province. Studied there computer application and all about designing.</p>
-            </div>
-            <div className="card">
-              <div className="shape"></div>
-              <p className="time">2022-2024</p>
+              <p className="time">2021-2024</p>
               <p className="school">Software Development</p>
               <p className="desc">At SOS Technical high school, it offers technical education in three trades. It also ordinary level in three years.it is located in kigali city, Gasabo district.</p>
             </div>

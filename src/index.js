@@ -10,13 +10,16 @@ root.render(
   </React.StrictMode>
 );
 
-// change title in title tag
-// Function to handle visibility change
+// change title in title tag and icon
+/// Function to handle visibility change
 function handleVisibilityChange() {
+  // const favicon = document.getElementById('favicon');
   if (document.hidden) {
     document.title = "Come back please 🤙";
+    // favicon.href = "please.ico"; // Change favicon to 'please.ico'
   } else {
     document.title = "Wilson Nshizirungu";
+    // favicon.href = "icon.ico"; // Change favicon back to 'icon.ico'
   }
 }
 

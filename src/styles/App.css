@@ -37,13 +37,13 @@
 /* ===================      Header designing      =================== */
 
 header{
+    /* position: -webkit-sticky; */
     position: fixed;
     width: 100%;
     display: flex;
     top: 0;
     justify-content: space-between;
     gap: 3rem;
-    /* background-color: var(--platinum); */
     background-color: transparent;
     padding: 15px 10%;
     align-items: center;
@@ -189,6 +189,7 @@ main{
                         font-size: 3rem;
                         font-family: 'Poppins', sans-serif;
                         color: var(--charcoal);
+                        font-weight: 700;
                     }
                     & .desc{
                         display: flex;

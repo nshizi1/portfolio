@@ -23,7 +23,7 @@
         {
             "id": "5",
             "name": "Tailwind",
-            "width": 67
+            "width": 91
         },
         {
             "id": "6",
@@ -38,17 +38,17 @@
         {
             "id": "8",
             "name": "CSS",
-            "width": 92
+            "width": 96
         },
         {
             "id": "9",
             "name": "JavaScript",
-            "width": 73
+            "width": 81
         },
         {
             "id": "10",
             "name": "React JS",
-            "width": 79
+            "width": 83
         },
         {
             "id": "11",
@@ -63,7 +63,7 @@
         {
             "id": "13",
             "name": "Python",
-            "width": 34
+            "width": 53
         },
         {
             "id": "14",
