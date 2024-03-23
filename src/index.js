@@ -15,7 +15,7 @@ root.render(
 function handleVisibilityChange() {
   // const favicon = document.getElementById('favicon');
   if (document.hidden) {
-    document.title = "Come back please 🤙";
+    document.title = "Come back to portfolio please 🤙";
     // favicon.href = "please.ico"; // Change favicon to 'please.ico'
   } else {
     document.title = "Wilson Nshizirungu";
