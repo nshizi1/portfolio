@@ -103,7 +103,7 @@ function Home() {
   return (
     <main>
       <section id="hero">
-        <div className="contents">
+        <div className="contenti">
           <div className="intro">
             <div className="texts">
               <h1 data-aos="fade-up" data-aos-duration="1000">Wilson Nshizirungu</h1>
@@ -133,7 +133,7 @@ function Home() {
           <h3>01</h3>
           <div className="line"></div>
         </div>
-        <div className="contents">
+        <div className="contenti">
           <div className="image">
             <img className='devImage' src={require("../images/imageTwo.jpg")} alt="" />
           </div>
@@ -178,7 +178,7 @@ function Home() {
           <h3>02</h3>
           <div className="line"></div>
         </div>
-        <div className="contents">
+        <div className="contenti">
           <div className="title">
             <p>Knowledge</p>
             <h2>My Education</h2>
@@ -235,7 +235,7 @@ function Home() {
           <h3>03</h3>
           <div className="line"></div>
         </div>
-        <div className="contents">
+        <div className="contenti">
           <div className="title">
             <p>Resume</p>
             <h2>My Expertise</h2>
@@ -273,7 +273,7 @@ function Home() {
           <h3>04</h3>
           <div className="line"></div>
         </div>
-        <div className="contents">
+        <div className="contenti">
           <div className="title">
             <p>What I do</p>
             <h2>My Services</h2>
@@ -301,7 +301,7 @@ function Home() {
           <h3>05</h3>
           <div className="line"></div>
         </div>
-        <div className="contents">
+        <div className="contenti">
           <div className="title">
             <p>Some of my work</p>
             <h2>My Portfolio</h2>
@@ -324,7 +324,7 @@ function Home() {
           <h3>06</h3>
           <div className="line"></div>
         </div>
-        <div className="contents">
+        <div className="contenti">
           <div className="title">
             <p>Reviews</p>
             <h2>Testimonials</h2>
@@ -347,7 +347,7 @@ function Home() {
           <h3>07</h3>
           <div className="line"></div>
         </div>
-        <div className="contents">
+        <div className="contenti">
           <div className="text">
             <div className="title">
               <p>Get in touch</p>
