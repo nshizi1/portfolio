@@ -164,7 +164,7 @@ function Home() {
                 <div className="card">
                   <i  class="fa-brands fa-github"></i>
                   <h2 >Github</h2>
-                  <p >400+ contributions</p>
+                  <p >650+ contributions</p>
                 </div>
               </div>
               <a href="./" ><button>Download CV</button></a>
