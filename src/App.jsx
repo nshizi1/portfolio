@@ -22,7 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       {loading && (
-        <div id="loading-screen" style={{ position: 'fixed', zIndex: 9999, top: 0, left: 0, width: '100%', height: '100%', background: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'opacity 0.5s ease' }}>
+        <div id="loading-screen" style={{ position: 'fixed', zIndex: 9999, top: 0, left: 0, width: '100%', height: '100dvh', overflow: 'hidden', background: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'opacity 0.5s ease' }}>
           <h1>Loading...</h1>
         </div>
       )}
