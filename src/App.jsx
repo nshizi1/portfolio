@@ -22,8 +22,8 @@ function App() {
   return (
     <BrowserRouter>
       {loading && (
-        <div id="loading-screen" style={{ position: 'fixed', zIndex: 9999, top: 0, left: 0, width: '100%', height: '100dvh', overflow: 'hidden', background: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'opacity 0.5s ease' }}>
-          <h1>Loading...</h1>
+        <div id="loading-screen" style={{ position: 'fixed', color: '#5c6170', zIndex: 9999, top: 0, left: 0, width: '100%', height: '100dvh', overflow: 'hidden', background: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'opacity 0.5s ease' }}>
+          <h1 style={{ color: '#5c6170' }}>Loading...</h1>
         </div>
       )}
       <div style={{ opacity: loading ? 0 : 1, transition: 'opacity 0.5s ease' }}>
